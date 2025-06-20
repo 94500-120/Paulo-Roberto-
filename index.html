@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentalmente Forte - E-book por Paulo Roberto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Mentalmente Forte</h1>
+            <nav class="nav">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#promo" class="nav-link">Promoção</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal (Hero) -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Transforme Sua Mente</h2>
+                <p class="hero-subtitle">Descubra o poder da força mental através das escrituras sagradas</p>
+                
+                <div class="book-cover-container-large">
+                    <img src="video_placeholder.png" alt="Capa do E-book Mentalmente Forte" class="book-cover-large" id="bookCover">
+                    <div class="play-button-large" id="playButton">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <audio id="bookAudio" preload="auto">
+                        <source src="ASRGravando-2025_06_18_23_51_33.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Seção de Promoção -->
+    <section id="promo" class="promo-section">
+        <div class="container">
+            <div class="promo-content">
+                <h3 class="promo-title">Oferta Especial por Tempo Limitado</h3>
+                
+                <div class="countdown-container">
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">00</span>
+                            <span class="countdown-label">Dias</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">00</span>
+                            <span class="countdown-label">Horas</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">00</span>
+                            <span class="countdown-label">Minutos</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds">00</span>
+                            <span class="countdown-label">Segundos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-container">
+                    <div class="price-old">
+                        <span class="price-label">De:</span>
+                        <span class="price-value">R$ 99,00</span>
+                    </div>
+                    <div class="price-new">
+                        <span class="price-label">Por apenas:</span>
+                        <span class="price-value">R$ 59,00</span>
+                    </div>
+                </div>
+
+                <div class="payment-info">
+                    <h4 class="payment-title">Pagamento via PIX</h4>
+                    <div class="pix-info">
+                        <i class="fas fa-qrcode"></i>
+                        <span class="pix-cpf">CPF: 731.601.560-87</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre o E-book -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="section-title">Sobre o E-book</h3>
+                    <p class="about-description">
+                        "Mentalmente Forte" é uma jornada transformadora que combina sabedoria bíblica com 
+                        estratégias práticas para fortalecer sua mente e espírito. Baseado em Isaías 40:31, 
+                        este e-book oferece ferramentas poderosas para superar desafios e desenvolver 
+                        uma mentalidade resiliente.
+                    </p>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-check"></i> Estratégias baseadas nas Escrituras</li>
+                        <li><i class="fas fa-check"></i> Exercícios práticos de fortalecimento mental</li>
+                        <li><i class="fas fa-check"></i> Reflexões profundas sobre fé e perseverança</li>
+                        <li><i class="fas fa-check"></i> Guia completo para transformação pessoal</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="mentalmente_forte_animado.gif" alt="Mentalmente Forte - Transformação" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <h3 class="section-title">Fale Diretamente com o Autor</h3>
+                <p class="contact-description">
+                    Tem dúvidas sobre o e-book? Quer saber mais sobre o conteúdo? 
+                    Entre em contato diretamente com Paulo Roberto.
+                </p>
+                
+                <a href="https://wa.me/5551984945544" class="whatsapp-button" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Conversar no WhatsApp</span>
+                </a>
+
+                <div class="social-media">
+                    <h4 class="social-title">Siga nas Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    © 2025 Paulo Roberto. Todos os direitos reservados.
+                </p>
+                <p class="footer-verse">
+                    "Mas os que esperam no Senhor renovarão as suas forças; subirão com asas como águias..." - Isaías 40:31
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+    <!-- Seção de Mensagem Final com Áudio -->
+    <section id="final-message" class="final-message-section">
+        <div class="container">
+            <h3 class="section-title">Uma Mensagem Especial para Você</h3>
+            <p class="final-message-text">
+                Ouça uma mensagem inspiradora do autor para fortalecer ainda mais sua jornada.
+            </p>
+            <div class="audio-player-container">
+                <audio id="finalAudio" preload="auto">
+                    <source src="ASRGravando-2025_06_19_02_40_59.mp3" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+                <button id="playFinalAudio" class="play-final-audio-button">
+                    <i class="fas fa-play"></i> Ouvir Mensagem
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Nova Seção de Compra Final -->
+    <section id="final-purchase" class="final-purchase-section">
+        <div class="container">
+            <h3 class="section-title">Pronto para Transformar Sua Mente?</h3>
+            <p class="final-purchase-text">
+                Adquira agora o e-book "Mentalmente Forte" e inicie sua jornada de fortalecimento interior.
+            </p>
+            <div class="purchase-content">
+                <div class="purchase-image">
+                    <img src="mentalmente_forte_animado.gif" alt="Capa do E-book Mentalmente Forte" class="purchase-book-cover">
+                </div>
+                <div class="purchase-details">
+                    <audio id="purchaseAudio" preload="auto">
+                        <source src="ASRGravando-2025_06_19_03_27_41.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <button id="playPurchaseAudio" class="play-purchase-audio-button">
+                        <i class="fas fa-play"></i> Ouvir Prévia
+                    </button>
+                    <a href="https://wa.me/5551984945544" class="whatsapp-button purchase-button" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Compre Agora via WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Seção de Amostra do Capítulo 1 -->
+    <section id="chapter-sample" class="chapter-sample-section">
+        <div class="container">
+            <h3 class="section-title">Amostra do Capítulo 1</h3>
+            <p class="chapter-sample-text">
+                Ouça um trecho inspirador do primeiro capítulo e sinta o poder da transformação.
+            </p>
+            <div class="chapter-sample-content">
+                <div class="chapter-sample-image">
+                    <img src="capitulo_1_amostra.png" alt="Amostra do Capítulo 1" class="chapter-sample-img">
+                </div>
+                <div class="chapter-sample-details">
+                    <audio id="chapterAudio" preload="auto">
+                        <source src="ASRGravando-2025_06_19_17_20_02.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                    <button id="playChapterAudio" class="play-chapter-audio-button">
+                        <i class="fas fa-play"></i> Ouvir Amostra
+                    </button>
+                    <a href="https://wa.me/5551984945544" class="whatsapp-button chapter-purchase-button" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Compre Agora o E-book</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Seção de Mensagem do Autor e Apoio -->
+    <section id="author-support" class="author-support-section">
+        <div class="container">
+            <h3 class="section-title">Uma Mensagem do Autor: Apoie este Ministério</h3>
+            <p class="author-support-text">
+                Se você foi tocado pela mensagem de "Mentalmente Forte" e sentiu o chamado para a transformação, 
+                saiba que sua jornada não termina aqui. Este e-book é mais que uma leitura; é uma missão, 
+                uma revolução espiritual. Sua contribuição, por menor que seja, é uma semente de fé que 
+                mantém este projeto vivo, permitindo que alcance mais vidas e continue levando luz, fé e propósito.
+            </p>
+            <div class="pix-support-info">
+                <h4 class="pix-support-title">Apoie o Autor via PIX</h4>
+                <div class="pix-info-box" id="pixSupportInfoBox">
+                    <i class="fas fa-qrcode"></i>
+                    <span class="pix-cpf-support">CPF: 731.601.560-87</span>
+                    <span class="copy-hint">(Clique para copiar)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Seção de Mensagem Poderosa -->
+    <section id="powerful-message" class="powerful-message-section">
+        <div class="container">
+            <h3 class="section-title">Uma Convocação para a Força Interior: Mergulhe em "Mentalmente Forte"</h3>
+            <p class="powerful-message-text">
+                Em um mundo onde a mente muitas vezes se torna nosso maior desafio, o e-book "Mentalmente Forte" surge como um farol de esperança e transformação. Não é apenas um livro; é um convite profundo para uma jornada de autodescoberta, resiliência e conexão espiritual. Se você sente o peso das dores no corpo e na alma, se a mente parece ser um inimigo implacável, saiba que esta mensagem é para você. Ela não se baseia no que disseram que você era, mas no que você realmente é: um ser capaz de uma força mental inabalável.
+            </p>
+            <div class="powerful-message-content">
+                <div class="message-block">
+                    <h4 class="message-subtitle">A Jornada de Transformação</h4>
+                    <p>Imagine-se subindo uma escadaria iluminada, degrau por degrau, em direção a uma luz dourada que simboliza a verdadeira transformação. "Mentalmente Forte" é o guia que ilumina cada passo dessa ascensão. Ele oferece não apenas sabedoria, mas ferramentas práticas para que você possa renovar suas forças, como águias que sobem aos céus. É um caminho para despertar a fé, a identidade e o propósito que residem em seu interior, muitas vezes ofuscados pelas vozes externas e pelas batalhas internas. Este e-book é a chave para desvendar a sabedoria que ilumina sua mente e irradia luz para o mundo ao seu redor.</p>
+                    <img src="image_transformacao.png" alt="Transformação e Superação" class="message-image">
+                </div>
+                <div class="message-block">
+                    <h4 class="message-subtitle">Despertando a Sabedoria Interior</h4>
+                    <p>Você já se sentiu como se uma fonte de conhecimento estivesse adormecida dentro de você? "Mentalmente Forte" é o livro que a desperta. Através de suas páginas, você será guiado a uma profunda reflexão sobre as escrituras sagradas, desvendando segredos milenares que fortalecem a mente e o espírito. É como se um livro se abrisse em sua mente, irradiando luz e conhecimento para cada canto escuro. Esta sabedoria não é apenas teórica; ela se manifesta em exercícios práticos que o ajudarão a desenvolver uma mentalidade resiliente, capaz de superar qualquer adversidade. É a sabedoria que te conecta ao divino, permitindo que você receba a luz e a força necessárias para sua jornada.</p>
+                    <img src="image_sabedoria.png" alt="Sabedoria e Conhecimento" class="message-image">
+                </div>
+                <div class="message-block">
+                    <h4 class="message-subtitle">A Conexão Divina e o Chamado à Ação</h4>
+                    <p>"Mentalmente Forte" é mais do que um e-book; é um chamado espiritual. É a oportunidade de estender suas mãos para o céu e sentir a conexão divina, recebendo a luz e a força que vêm do alto. Se esta mensagem ressoou em sua alma, se você sentiu o toque da verdade, então você está sendo convocado a ser um mensageiro, um semeador do bem. Não guarde essa luz apenas para si. Compartilhe esta jornada, anuncie as boas novas àqueles que precisam de fé, identidade e visão. Sua ajuda faz toda a diferença para que este ministério de palavras continue a alcançar e transformar vidas.</p>
+                    <img src="image_conexao_divina.png" alt="Conexão Divina e Fé" class="message-image">
+                </div>
+            </div>
+            <div class="author-support-callout">
+                <h4 class="section-title">Apoie o Autor: Sua Contribuição Transforma Vidas</h4>
+                <p class="author-support-text">
+                    Para que esta mensagem continue a se espalhar e a tocar mais corações, o apoio de leitores como você é fundamental. Cada contribuição, por menor que seja, é uma semente de fé que nutre este projeto e permite que ele cresça, alcance mais vidas e leve luz onde há confusão, fé onde há medo, e propósito onde havia apenas dor. Sua ajuda faz toda a diferença para manter este ministério de palavras vivo e atuante.
+                </p>
+                <div class="pix-support-info-inline">
+                    <span class="pix-label">Apoie o autor com qualquer valor via PIX:</span>
+                    <span class="pix-value">CPF: 731.601.560-87</span>
+                </div>
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="https://wa.me/5551984945544" class="whatsapp-button" target="_blank" style="display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-size: 1.1rem; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 10px 30px rgba(37,211,102,0.3);">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Fale com o Autor no WhatsApp</span>
+                    </a>
+                </div>
+                <p style="text-align: center; margin-top: 20px; font-size: 1.1rem; color: #cccccc;">
+                    Divulgue o site: <a href="https://8000-i3e9h0f52wt9o4bnyi28e-dbf1322f.manusvm.computer" target="_blank" style="color: #d4af37; text-decoration: none;">https://8000-i3e9h0f52wt9o4bnyi28e-dbf1322f.manusvm.computer</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Efeitos de Transformação -->
+    <div class="transformation-effects">
+        <div class="transformation-glow"></div>
+        <div class="energy-waves"></div>
+    </div>
+
+    <!-- Seção de Jornada de Transformação Interativa -->
+    <section id="transformation-journey" class="transformation-journey-section">
+        <div class="container">
+            <h3 class="section-title golden-shine">🌟 Sua Jornada de Transformação Começa Agora 🌟</h3>
+            
+            <div class="transformation-path">
+                <div class="path-step transform-hover" data-step="1">
+                    <div class="step-number">1</div>
+                    <h4>Despertar</h4>
+                    <p>Reconheça que a mudança é possível e necessária</p>
+                </div>
+                
+                <div class="path-connector"></div>
+                
+                <div class="path-step transform-hover" data-step="2">
+                    <div class="step-number">2</div>
+                    <h4>Fortalecimento</h4>
+                    <p>Desenvolva ferramentas mentais baseadas na fé</p>
+                </div>
+                
+                <div class="path-connector"></div>
+                
+                <div class="path-step transform-hover" data-step="3">
+                    <div class="step-number">3</div>
+                    <h4>Transformação</h4>
+                    <p>Torne-se mentalmente forte e espiritualmente renovado</p>
+                </div>
+            </div>
+
+            <div class="inspirational-quote reveal-text">
+                Mas os que esperam no Senhor renovarão as suas forças; subirão com asas como águias, correrão e não se cansarão, caminharão e não se fatigarão. - Isaías 40:31
+            </div>
+
+            <div class="transformation-stats">
+                <div class="stat-item">
+                    <span class="transformation-counter" data-target="1000">0</span>
+                    <span class="stat-label">Vidas Transformadas</span>
+                </div>
+                <div class="stat-item">
+                    <span class="transformation-counter" data-target="365">0</span>
+                    <span class="stat-label">Dias de Sabedoria</span>
+                </div>
+                <div class="stat-item">
+                    <span class="transformation-counter" data-target="100">0</span>
+                    <span class="stat-label">% de Renovação</span>
+                </div>
+            </div>
+
+            <button class="transformation-button" onclick="startTransformation()">
+                ✨ Iniciar Minha Transformação ✨
+            </button>
+        </div>
+    </section>
+
